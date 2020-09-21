@@ -36,11 +36,9 @@ follower3
 follower1.age
 follower2.age
 follower3.age
- 
 
 #BLOODOATH --> (date, cult, follower) 
 BloodOath.first_oath     # why didnt you test blood oath more? 
-
 
 binding.pry
 puts "Mwahahaha!" # just in case pry is buggy and exits
