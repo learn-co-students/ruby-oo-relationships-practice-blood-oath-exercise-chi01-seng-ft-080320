@@ -1,103 +1,10 @@
 
 
-class Colt 
-
-    attr_accessor
-    attr_reader
-    @@all = []
-
-    def initialize(name)
-   
-        @name = name
-        @location = location 
-        @founding_year = founding_year
-        @slogan = slogan
-        @recruit_follower = recruit_follower
-        @cult_population = []
-        @follower = [] 
-        @cults = []
-        
-    end 
-
-    def name 
-        puts {#name}
-    end 
-
-    def location 
-        puts {#location}
-    end 
-
-    # def founding_year 
-        # puts {founding_year.to_i}
-        # puts Integer that is th enumber of followers in this cult 
-    # end 
-
-    def slogan 
-        puts {"#slogan"}
-    end 
-
-    # def recruit_follower(Follower)
-        #@recruit_follower << @follower 
-    # end 
-
-    def cult_population
-        @cult_population.to_i << followers
-    end 
-
-    # def cults_total 
-        #@@all.self << cults 
-    # end 
-
-    def find_by_name(cult_name)
-        @@self.cult.to_s == cult_name
-    end 
-
-    def find_by_location(location)
-        @self.location.to_s 
-        return @@self.all
-    end 
-
-    def find_by_founding_year(year_founded)
-        year_founded.to_s 
-        # return @cults
-    end 
 
 
-    ###################
 
-    binding ‘pry’
-class Cult
-    attr_reader :name, :location, ;founding_year, :slogan
-    @@all = []
-    def initialize (name, location)
-        @name = name
-        @location = location
-        @founding_year = founding_year
-        @slogan = slogan
-        @@all << self
-    end
-class Follower
-     attr_reader :name, :age, :life_motto
-    @@all = []
-    def initialize (name, age, life_motto)
-        @name = name
-        @age = age
-        @life_motto = life_motto
-        @@all << self
-    end
-    def self.of_certain_age(age)
-        all.select do |follower|
-        follower.age >= age
-binding.pry
-0
-    end
-    class BloodOath
-        attr_reader :initiation_date
-        @@all = []
-        def initialize (initiation_date)
-            @initiation_date = date
-            @all << self
-        end
-         def self.all
-            @all
-        end
+
+######################################
+
+
+
