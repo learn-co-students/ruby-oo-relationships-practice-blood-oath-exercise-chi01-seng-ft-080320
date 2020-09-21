@@ -7,20 +7,29 @@ class Cult
     @@all = []
 
     def initialize (name, location, founding_year, slogan)
-   
         @name = name
         @location = location 
         @founding_year = founding_year
         @slogan = slogan
-        @@all << self 
 
+        @@all << self 
     end 
-    
-    #takes in an argument of a Follower instance and adds them to this cult's list of followers
     
     def recruit_follower(follower)
-        BloodOath.new(date, self, follower) 
-    end 
+        BloodOath.new(date, self, follower)  
+    end #takes in an argument of a Follower instance and adds them to this cult's list of
+
+
+    def cult_population 
+        recruited = BloodOath.all.select{|bloodoath| bloodoath.cult == self}.count ##???
+        joined = BloodOath.all.select{|bloodoath| bloodoath.follower == self}.count  ##???
+        total = recruited + joined
+        total 
+     end #followers either join or are recruited  
+
+
+    #returns an Integer that is the number of followers in this cult
+
 
 
     # # def founding_year 
