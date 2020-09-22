@@ -1,8 +1,7 @@
 
     class BloodOath
-        
-        attr_accessor :follower
-        attr_reader :date, :cult 
+    
+        attr_reader :date, :cult, :follower
 
         @@all = []
 
@@ -11,15 +10,15 @@
             @cult = cult 
             @follower = follower 
 
-            @all << self
+            @@all << self
         end
-                
+
         def self.all
-            @all   
+            @@all   
         end #returns an Array of all the blood oaths
 
-        def self.first_oath
-            self.all.first.follower 
-        end #returns the Follower instance for the follower that made the very first blood oath
+    #     def self.first_oath
+    #         self.all.first.follower 
+    #     end #returns the Follower instance for the follower that made the very first blood oath
 
     end 
